@@ -16,3 +16,5 @@ class Article(BaseModel):
     timestamp: str
     location: str
     embedding: str
+    severity_score: str#
+    stability_index: str#
