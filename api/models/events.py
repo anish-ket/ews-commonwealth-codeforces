@@ -13,4 +13,6 @@ class Event(BaseModel):
     rCount: int
     totalArticles: int
     centroid_embedding: str
+    severity_score: int
+    stability_index: int
     # publishedDate will be set automatically
