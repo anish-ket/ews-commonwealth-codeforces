@@ -2,6 +2,8 @@ def indArticle(article)-> dict:
     return{
         "title": article["title"],
         "description": article["description"],
+        "severity_score": str(article["severity_score"]),
+        "stability_index": str(article["stability_index"]),
         "content": article["content"],
         "imgURL": article["imgURL"],
         "eventName": article["eventName"],
