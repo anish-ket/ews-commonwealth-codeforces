@@ -3,6 +3,7 @@ from typing import Optional
 from datetime import datetime
 
 class Event(BaseModel):
+    id: str = Field(..., alias="_id")
     eventHeadline: str
     location: str
     leftSummary: str
