@@ -11,11 +11,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar,  AvatarFallback, AvatarImage } from "../ui/avatar"
+import Sidebar from "./Sidebar"
 
 export default function Navbar() {
   return (
   <>
       <nav className="backdrop-blur-[10px] fixed top-0 left-0 right-0 z-50 mx-2 h-[44px] flex-shrink-0 rounded-b-[21.308px] bg-[rgba(64,61,61,0.56)] flex items-center justify-between px-6 font-inter">
+        {/* <Sidebar /> */}
         <div className="flex items-center space-x-4">
           <Link href="/" className="text-white font-bold text-[24px] font-[700] pb-1">EWS</Link>
         </div>
