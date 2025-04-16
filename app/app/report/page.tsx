@@ -118,7 +118,20 @@ export default function ReportPage() {
   }
 
   return (
+    
+
     <main className="min-h-screen text-white p-4">
+
+            <div 
+            className="fixed top-0 left-0 w-full h-full z-[-1]"
+            style={{
+                backgroundImage: "url('/images/backgrounds/event-bg.jpeg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                filter: "blur(15px) brightness(0.9)"
+            }}
+            />
       {/* Filter Bar */}
       <div className="flex flex-wrap items-center gap-13 mb-6">
         {/* Left side filters */}

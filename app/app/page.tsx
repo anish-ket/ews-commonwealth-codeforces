@@ -10,6 +10,8 @@ const users = [
 ];
 
 export default function AuthPage() {
+
+  
   const [isLogin, setIsLogin] = useState(true);
   const [form, setForm] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -37,7 +39,19 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center text-white transition-all">
+
+    <>
+    <div 
+            className="fixed top-0 left-0 w-full h-full z-[-1]"
+            style={{
+                backgroundImage: "url('/images/backgrounds/event-bg.jpeg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                filter: "blur(15px) brightness(0.9)"
+            }}
+            />
+    <div className="min-h-screen flex items-center justify-center text-white transition-all">
       <div className="w-full max-w-md p-8 rounded-2xl shadow-xl bg-neutral-900">
         <h1 className="text-2xl font-bold mb-6 text-center">
           {isLogin
@@ -93,5 +107,6 @@ export default function AuthPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
