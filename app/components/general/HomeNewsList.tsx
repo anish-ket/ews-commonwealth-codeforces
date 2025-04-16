@@ -28,13 +28,13 @@ interface EventProps {
 export function EventComponent({ event }: EventProps) {
     return (
         <div className="flex items-start my-4">
-            <div className="w-[80px] h-[80px] rounded-[50%] bg-gray-300 ml-2 mr-4 flex-shrink-0">
+            <div className="relative w-[80px] h-[80px] rounded-full bg-gray-300 ml-2 mr-4 flex-shrink-0 overflow-hidden">
                 <Image 
-                    src={event.imageUrl || ""} 
-                    width={80} 
-                    height={80} 
-                    alt={/*`${event.title} Image`*/''} 
-                    className="rounded-full object-cover" 
+                    src={event.imageUrl || ""}
+                    alt={event.title}
+                    fill // Use fill property instead of width/height
+                    className="object-cover" // object-cover ensures the image maintains aspect ratio
+                    sizes="80px" // Hint for the browser about the image size
                 />
             </div>
             <div className="flex flex-col">
