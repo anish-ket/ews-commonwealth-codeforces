@@ -20,13 +20,13 @@ async function getData(eventID: string) {
         date: "23hrs ago",
         time: "18:25",
         location: "Canada",
-        description: "An advocacy group representing Canada’s university and college professors is strongly urging academic staff to avoid non-essential travel to the U.S. amid an evolving political landscape, The Canadian Association of University Teachers (CAUT), a group of independent associations and trade unions that represent 72,000 teachers, researchers and other staff at 120 universities and colleges, issued its updated travel advice on Tuesday. CAUT strongly recommends that academic staff travel to the U.S. only if essential and necessary, the warning reads.The organization said that academics who fall into certain categories should exercise particular caution.Those categories include citizens or residents of a country identified as likely to be subject to a travel ban, those from a country that has diplomatic tensions with the U.S., people who expressed negative opinions about the Trump administration or its policies, and those whose research could be seen as at odds with the current U.S. government.Story continues below advertisementThe warning also applies to travellers with passport stamps related to recent travel to countries that may be subject to a travel ban or have diplomatic tensions, and teachers or staff who identify as transgender or whose travel documents indicate a sex other than their sex at birth.2:15 Washington State border towns beg Canadians to come backIf teachers and other staff need to travel, the association also urges them to carefully consider what information they have or need to have on their electronic devices when crossing borders and to take action to protect sensitive information where necessary.Get daily National news Get the day top news, political, economic, and current affairs headlines, delivered to your inbox once a day. Sign up for daily National newsletter Sign Up By providing your email address, you have read and agree to Global News Terms and Conditions and Privacy Policy.",
+        description: "An advocacy group representing Canada’s university and college professors is strongly urging academic staff to avoid non-essential travel to the U.S. amid an evolving political landscape, The Canadian Association of University Teachers (CAUT), a group of independent associations and trade unions that represent 72,000 teachers, researchers and other staff at 120 universities and colleges, issued its updated travel advice on Tuesday. CAUT strongly recommends that academic staff travel to the U.S. only if essential and necessary, the warning reads.The organization said that academics who fall into certain categories should exercise particular caution",
         organizer: "Commonwealth Student Organization",
         attendees: 42,
         maxCapacity: 100,
         serevrity: "HIGH SEVERITY",
         category: "POLTICAL",
-        imageUrl: "/images/events/canada1.jpeg",
+        imageUrl: "https://i.cbc.ca/ais/e9c5e5c4-8936-4c7c-908b-84b3074df793,1743860427973/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C149%2C2048%2C1152%29%3BResize%3D620",
         timeline: [
             {
                 title: "Avoid U.S. travel if possible, Canadian academics are being urged",
@@ -62,7 +62,7 @@ export default async function EventPage({ params }: { params: { eventID: string 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                filter: "blur(8px) brightness(0.5)"
+                filter: "blur(15px) brightness(0.9)"
             }}
         />
 
@@ -97,7 +97,7 @@ export default async function EventPage({ params }: { params: { eventID: string 
             </div>
 
             {/* Timeline component - increase opacity slightly for better readability */}
-            <div className="absolute top-11 right-1 mx-2 my-2 w-[48%] h-auto bg-[rgba(64,61,61,0.76)] rounded-[17.617px] px-6.5 py-5 backdrop-blur-[10px]">
+            <div className="absolute top-0 right-1 mx-2 w-[48%] h-auto bg-[rgba(64,61,61,0.76)] rounded-[17.617px] px-6.5 py-5 backdrop-blur-[10px]">
                 <h2 className="mt-2 text-[18px] font-[700] text-white leading-[18px]">Timeline</h2>
 
                 <div className="mt-4">
@@ -109,7 +109,7 @@ export default async function EventPage({ params }: { params: { eventID: string 
                             <div key={index} className="flex items-start">
                                 <div className="flex flex-col items-center">
                                     <div className="w-3 h-3 bg-white rounded-full"></div>
-                                    {!isLast && <div className="w-0.5 h-16 bg-white/30"></div>}
+                                    {!isLast && <div className="w-0.5 h-30 bg-white/30"></div>}
                                 </div>
                                 <div className="ml-4">
                                     <h3 className="text-white text-[16px] font-semibold">{item.title}</h3>

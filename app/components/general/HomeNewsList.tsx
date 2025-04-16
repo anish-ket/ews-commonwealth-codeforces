@@ -64,7 +64,7 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
 
     return (
         <Tabs defaultValue="Potential">
-            <TabsList className="ml-auto mr-2 mt-4 w-[25%] h-[7.5vh] bg-[rgba(64,61,61,0.56)] rounded-[17.617px] backdrop-blur-[10px]">
+            <TabsList className="ml-auto mr-2 mt-4 w-[30%] h-[7.5vh] bg-[rgba(64,61,61,0.56)] rounded-[17.617px] backdrop-blur-[10px]">
                 <TabsTrigger value="Active" className="data-[state=active]:bg-[rgba(255,255,255,0.3)] data-[state=active]:font-[700] rounded-[17.951px] data-[state=active]:text-white transition-colors text-white font-[700]">
                     <div>
                         <Image src={active} alt="Active" className="w-[24px] h-[24px] mt-0.5"/>
@@ -85,7 +85,7 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                 </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="Active" className="ml-auto mr-2 mt-1 w-[25%] h-auto max-h-[70vh] overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
+            <TabsContent value="Active" className="ml-auto mr-2 mt-1 w-[30%] h-auto overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
                 <div className="ml-4 font-[800] text-white text-sm mt-8 mb-4">TOP EVENTS</div>
                 {activeEvents.length > 0 ? (
                     <>
@@ -103,7 +103,7 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                 )}
             </TabsContent>
 
-            <TabsContent value="Potential" className="ml-auto mr-2 mt-1 w-[25%] h-auto max-h-[70vh] overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
+            <TabsContent value="Potential" className="ml-auto mr-2 mt-1 w-[30%] h-auto overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
                 <div className="ml-4 font-[800] text-white text-sm mt-8 mb-4">TOP EVENTS</div>
                 {potentialEvents.length > 0 ? (
                     <>
@@ -121,7 +121,7 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                 )}
             </TabsContent>
 
-            <TabsContent value="All" className="ml-auto mr-2 mt-1 w-[25%] h-auto max-h-[70vh] overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
+            <TabsContent value="All" className="ml-auto mr-2 mt-1 w-[30%] h-auto overflow-y-auto bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-1 backdrop-blur-[10px]">
                 <div className="ml-4 font-[800] text-white text-sm mt-8 mb-4">TOP EVENTS</div>
                 {events.length > 0 ? (
                     <>
