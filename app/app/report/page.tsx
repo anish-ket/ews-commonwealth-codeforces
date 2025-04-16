@@ -44,28 +44,31 @@ export default function ReportPage() {
   
   const newsItems = [
     {
-      title: "Canada imposes 25% tarrifs in trade war with US",
-      description: "China called the vessel's downing an excessive reaction and said it retains the right to respond further",
+      title: "Avoid US Travel",
+      description: "An advocacy group representing Canada’s university and college professors is strongly urging academic staff to avoid non-essential travel to the U.S.",
       category: "POLITICAL",
       country: "Canada",
-      severity: "VERY EXTREME",
-      date: "3 hrs ago"
+      severity: "High",
+      date: "23 hrs ago",
+      imageUrl: "/images/events/canada1.jpeg" // Add this line
     },
     {
-      title: "Russia-Ukriane war live: arming Ukriane is 'only path to peace'.",
-      description: "The British foreign secretary, James Cleverly, said Helping to arm Ukraine so it can defend itself is the swiftest path to achieving peace.",
-      category: "MILITARY",
-      country: "UK",
-      severity: "VERY EXTREME",
-      date: "7 hrs ago"
+      title: "Trump tariffs, ASEAN should diversify",
+      description: "Beyond the immediate impact of US tariffs, both Singapore and the wider region must start preparing for deeper shifts in the global trade landscape, said panellists in two recent online seminars.",
+      category: "POLITICAL",
+      country: "Singapore",
+      severity: "High",
+      date: "19 hrs ago",
+      imageUrl: "/images/asean.jpeg"
     },
     {
-      title: "Is TikTok really giving your data to China?",
-      description: "TikTok is owned by Beijing-based ByteDance. In China, the government censors the internet and users online surveillance to control people.",
-      category: "MILITARY",
-      country: "USA",
-      severity: "VERY EXTREME",
-      date: "12 hrs ago"
+      title: "Three ways this Canada-U.S. dispute will end",
+      description: "You'd have to squint till your eyeballs ache, but there is a foreseeable scenario where Canada and the U.S. build a closer relationship out of this ugly moment.This outcome is far from certain — hence the squinting.But one influential figure in Washington professes to see it. Donald Trump's first-term trade czar predicted the optimistic scenario last week in Ottawa",
+      category: "POLITICAL",
+      country: "Canada",
+      severity: "Medium",
+      date: "12 hrs ago",
+      imageUrl: "/images/events/canada1.jpeg"
     }
   ];
 
@@ -262,7 +265,15 @@ export default function ReportPage() {
       <div className="flex flex-col gap-4 w-[65%]">
         {newsItems.map((item, index) => (
           <div key={index} className="bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-6.5 py-6.5 backdrop-blur-[10px] flex gap-4">
-            <div className="w-24 h-24 rounded-full bg-gray-300"></div>
+            {/* Replace the gray circle with Image component */}
+            <div className="relative w-24 h-24 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
+              <Image 
+                src={item.imageUrl || "/images/events/placeholder.jpg"}
+                alt={item.title}
+                fill
+                className="object-cover" 
+              />
+            </div>
             <div className="flex-1">
               <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
               <p className="text-sm mb-3">{item.description}</p>
