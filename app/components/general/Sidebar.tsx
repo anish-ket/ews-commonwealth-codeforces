@@ -25,7 +25,7 @@ export function Sidebar() {
   const routes = [
     {
       name: "Home",
-      path: "/",
+      path: "/dashboard",
       icon: <Home className="h-5 w-5 mr-3" />
     },
     {
