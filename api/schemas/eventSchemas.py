@@ -12,6 +12,8 @@ def indEvent(event)->dict:
         "lCount": event["lCount"],
         "cCount": event["cCount"],
         "rCount": event["rCount"],
+        "severity_score": event["severity_score"],
+        "stability_index": event["stability_index"],
         "totalArticles": event["totalArticles"],
         "publishedDate": datetime.utcnow(),  # auto timestamp
         "centroid_embedding" : event["centroid_embedding"]

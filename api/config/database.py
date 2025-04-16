@@ -1,10 +1,14 @@
 from pymongo import MongoClient
 
 
-client = MongoClient('mongodb+srv://anishketkar05:anishUSER@news-analysis-c1.vonz85k.mongodb.net/?appName=news-analysis-c1')
+MONGO_URI = "mongodb+srv://parthdesai635:parth1@ewd.azvnj.mongodb.net/?retryWrites=true&w=majority&appName=EWD"
 
-db1 = client.Events
-mainEvents = db1['MainEvents']
+client = MongoClient(MONGO_URI)
 
-db2 = client.Articles
-mainArticles = db2['MainArticles']
+db = client["EWD"]
+
+events_collection = db["MainEvents"]
+articles_collection = db["MainArticles"]
+
+def get_db():
+    return db
