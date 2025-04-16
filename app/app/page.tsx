@@ -51,14 +51,16 @@ export default function AuthPage() {
                 filter: "blur(15px) brightness(0.9)"
             }}
             />
-    <div className="min-h-screen flex items-center justify-center text-white transition-all">
-      <div className="w-full max-w-md p-8 rounded-2xl shadow-xl bg-neutral-900">
+
+
+    <div className="min-h-screen flex items-center justify-center text-white transition-all overflow-hidden">
+      <div className="w-full max-w-md p-8 shadow-xl bg-[rgba(64,61,61,0.75)] rounded-[17.617px] overflow-hidden">
         <h1 className="text-2xl font-bold mb-6 text-center">
           {isLogin
-            ? 'Login to CommonWealth Dashboard'
-            : 'Sign Up for CommonWealth Dashboard'}
+            ? 'Login to Commonwealth Early Warning Dashboard'
+            : 'Sign Up for CommonWealth Early Warning Dashboard'}
         </h1>
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5 overflow-hidden">
           <div>
             <label className="block mb-1 text-sm text-gray-300">Email</label>
             <input
@@ -98,7 +100,7 @@ export default function AuthPage() {
               setForm({ email: '', password: '' });
               setError('');
             }}
-            className="text-sm text-gray-400 hover:text-gray-200 transition"
+            className="text-sm text-white hover:text-gray-200 transition"
           >
             {isLogin
               ? "Don't have an account? Sign up"

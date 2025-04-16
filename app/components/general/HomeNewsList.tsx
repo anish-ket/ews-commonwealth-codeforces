@@ -93,7 +93,9 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                             <EventComponent key={index} event={event} />
                         ))}
                         <div className="text-center mb-5">
-                            <button className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors">
+                            <button 
+                            className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors"
+                                onClick={() => window.location.href = "/report"}>
                                 View More
                             </button>
                         </div>
@@ -111,7 +113,8 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                             <EventComponent key={index} event={event} />
                         ))}
                         <div className="text-center mb-5">
-                            <button className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors">
+                            <button className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors" 
+                                onClick={() => window.location.href = "/report"}>
                                 View More
                             </button>
                         </div>
@@ -129,7 +132,11 @@ export default function HomeNewsList({ events }: HomeNewsListProps) {
                             <EventComponent key={index} event={event} />
                         ))}
                         <div className="text-center mb-5">
-                            <button className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors">
+                            <button 
+                                className="bg-[rgba(255,255,255,0.3)] text-white font-[700] py-1.5 px-4 rounded-lg hover:bg-[rgba(255,255,255,0.4)] transition-colors"
+                                onClick={() => window.location.href = "/report"
+                            }>
+                                
                                 View More
                             </button>
                         </div>

@@ -264,7 +264,7 @@ export default function ReportPage() {
           <div key={index} className="bg-[rgba(64,61,61,0.56)] rounded-[17.617px] px-6.5 py-6.5 backdrop-blur-[10px] flex gap-4">
             <div className="w-24 h-24 rounded-full bg-gray-300"></div>
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
+              <a href="/event/1"><h2 className="text-2xl font-bold mb-2">{item.title}</h2></a>
               <p className="text-sm mb-3">{item.description}</p>
               <div className="flex items-center mt-2.5 mb-4">
                     <span className="text-[14px] font-[400] text-white">{item.date}</span>
