@@ -104,3 +104,11 @@ Commonwealth Secretariat – Good Offices team
 Hugging Face & spaCy – For powerful open-source NLP tools
 
 Open Source community ❤️
+
+## Report
+
+[Detailed Report_Team CodeForces.pdf](https://github.com/user-attachments/files/21264672/Detailed.Report_Team.CodeForces.pdf)
+
+## Team PPT
+
+[Codeforces.pptx](https://github.com/user-attachments/files/21264805/Codeforces.pptx)
